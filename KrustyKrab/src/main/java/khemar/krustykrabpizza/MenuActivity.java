@@ -19,7 +19,7 @@ import java.util.List;
 
 public class MenuActivity extends AppCompatActivity {
 
-
+    private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int[] imageResId = {
@@ -33,6 +33,9 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);

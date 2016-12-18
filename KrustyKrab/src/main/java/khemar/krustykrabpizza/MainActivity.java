@@ -16,13 +16,16 @@ import com.vstechlab.easyfonts.EasyFonts;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    Toolbar toolbar;
     Button orderButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         TextView tv = (TextView)findViewById(R.id.welcome);
         tv.setTypeface(EasyFonts.captureIt(this));
