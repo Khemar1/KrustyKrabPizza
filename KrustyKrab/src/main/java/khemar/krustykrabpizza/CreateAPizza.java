@@ -9,11 +9,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioGroup;
 
 public class CreateAPizza extends AppCompatActivity {
 
     private Toolbar toolbar;
     private Button button;
+    private RadioGroup rg;
+    private RadioGroup rg2;
+    private CheckBox[] cb=new CheckBox[13];
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +30,19 @@ public class CreateAPizza extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        cb[0] = (CheckBox)findViewById(R.id.bacon);
+        cb[1] = (CheckBox)findViewById(R.id.beef);
+        cb[2] = (CheckBox)findViewById(R.id.broccoli);
+        cb[3] = (CheckBox)findViewById(R.id.garlic);
+        cb[4] = (CheckBox)findViewById(R.id.greenpepper);
+        cb[5] = (CheckBox)findViewById(R.id.pepperoni);
+        cb[6] = (CheckBox)findViewById(R.id.chicken);
+        cb[7] = (CheckBox)findViewById(R.id.spinach);
+        cb[8] = (CheckBox)findViewById(R.id.ham);
+        cb[9] = (CheckBox)findViewById(R.id.olives);
+        cb[10] = (CheckBox)findViewById(R.id.mushroom);
+        cb[11] = (CheckBox)findViewById(R.id.pineapple);
+        cb[12] = (CheckBox)findViewById(R.id.sausage);
 
         button = (Button)findViewById(R.id.continuebutton);
         button.setOnClickListener(new View.OnClickListener() {
