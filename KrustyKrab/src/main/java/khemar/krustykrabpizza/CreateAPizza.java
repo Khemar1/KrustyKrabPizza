@@ -43,13 +43,12 @@ public class CreateAPizza extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case 1:
+            case R.id.Help:
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.wikihow.com/Order-a-Pizza-Over-the-Phone"));
                 startActivity(intent);
-
                 return true;
-            case 2:
+            case R.id.pizza:
                 Intent intent2 = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://kkrab.com/menu"));
                 startActivity(intent2);
