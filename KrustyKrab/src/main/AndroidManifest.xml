@@ -30,8 +30,11 @@
         <activity
             android:name=".InfoActivity"
             android:label="Enter Information"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Checkout"></activity>
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Checkout"
+            android:label="@string/checkout"
+            android:parentActivityName=".MainActivity"
+            />
     </application>
 
 </manifest>

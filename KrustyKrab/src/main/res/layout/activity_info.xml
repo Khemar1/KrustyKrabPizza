@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/name"
             android:hint="Enter Name" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPostalAddress"
             android:ems="10"
-            android:id="@+id/editText4"
+            android:id="@+id/address"
             android:hint="24 Dallner Road eg." />
 
         <TextView
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText3"
+            android:id="@+id/city"
             android:hint="Toronto eg." />
         <TextView
             android:text="@string/postalinfo"
