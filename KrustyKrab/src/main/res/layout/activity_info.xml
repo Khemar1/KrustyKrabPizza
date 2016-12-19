@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="khemar.krustykrabpizza.InfoActivity"
+    android:background="@drawable/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:nestedScrollingEnabled="true"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:text="@string/nameinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Enter Name" />
+
+        <TextView
+            android:text="@string/addressinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:hint="24 Dallner Road eg." />
+
+        <TextView
+            android:text="@string/cityinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView4"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Toronto eg." />
+        <TextView
+            android:text="@string/postalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postv"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/postalcode"
+            android:hint="M3L 2M7 eg." />
+        <TextView
+            android:text="@string/phoneinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phonetv"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/phonenum"
+            android:hint="647-123-4567 eg."
+            android:inputType="phone" />
+        <TextView
+            android:text="@string/creditcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardtv"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/creditcard"
+            android:hint="4536********"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:text="@string/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/submitBtn"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="18dp"
+            style="@android:style/Widget.Button" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

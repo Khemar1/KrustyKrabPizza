@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class CreateAPizza extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,15 @@ public class CreateAPizza extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        button = (Button)findViewById(R.id.continuebutton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CreateAPizza.this, InfoActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

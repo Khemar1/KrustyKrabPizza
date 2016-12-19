@@ -15,15 +15,16 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="53dp"
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     </android.support.design.widget.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="457dp"
         android:layout_marginTop="60dp">
 
         <LinearLayout
@@ -37,7 +38,10 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/holo_red_light"
             android:id="@+id/sizes"
-            android:text="@string/sizes" />
+            android:text="@string/sizes"
+            android:textStyle="normal|bold"
+            android:fontFamily="casual"
+            android:textSize="16sp" />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/small"
                 android:id="@+id/small" />
+
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,9 +73,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_red_light"
             android:text="@string/cheese"
-            android:id="@+id/cheeses"/>
+            android:id="@+id/cheeses"
+            android:fontFamily="casual"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary" />
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,6 +88,12 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mozzarella"
                 android:text="@string/mozzarella" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goatch"
+                android:id="@+id/goat" />
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -96,11 +110,6 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/goatch"
-                android:id="@+id/goat" />
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/parmesan"
                 android:id="@+id/parmesan" />
         </RadioGroup>
@@ -110,7 +119,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/holo_red_light"
-            android:id="@+id/meat" />
+            android:id="@+id/meat"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:textSize="16sp" />
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -147,7 +159,11 @@
             android:textColor="@android:color/holo_red_light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" />
+            android:id="@+id/textView3"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:typeface="normal" />
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -180,23 +196,33 @@
             android:text="@string/greenpepper"
             android:id="@+id/greenpepper" />
 
-        <CheckBox
+            <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/olives"
             android:id="@+id/olives" />
 
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:background="@drawable/button"
-            android:text="@string/details"
-            android:id="@+id/continuebutton"
-            android:elevation="5dp"
-            android:layout_marginLeft="120dp" />
         </LinearLayout>
 
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="170dp"
+            android:background="@drawable/krabs"
+            android:id="@+id/continuebutton"
+            android:elevation="17dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="127dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="130dp" />
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
