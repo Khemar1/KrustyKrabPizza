@@ -10,14 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SpecialsFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link SpecialsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class SpecialsFragment extends Fragment {
 
 
@@ -36,13 +29,13 @@ public class SpecialsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_specials, container, false);
-
-        ImageView img = (ImageView) v.findViewById(R.id.imageView3);
 
 
 
-        return v;
+
+
+        return inflater.inflate(R.layout.fragment_specials, container, false);
+
     }
 
 

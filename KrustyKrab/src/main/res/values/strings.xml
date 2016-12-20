@@ -56,5 +56,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="specials">specials</string>
     <string name="confirm">Confirm</string>
+    <string name="meatlovers">Meat Lovers</string>
+    <string name="hawaiin">Hawaiian</string>
+    <string name="veg">Veggie</string>
 
 </resources>
